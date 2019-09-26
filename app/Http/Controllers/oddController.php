@@ -8,6 +8,15 @@ class oddController extends Controller
 {
     function showOddPage(){
 
-        return view('odd');
+        $oddNumbers = [];
+
+        for ($i=10; $i < 101; $i++) { 
+            
+            if ($i % 2 !== 0){
+                $oddNumbers[] = $i;
+            }
+        }
+
+        return view('odd', compact('oddNumbers'));
     }
 }
