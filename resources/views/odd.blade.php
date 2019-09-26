@@ -11,6 +11,10 @@
  
     </head>
     <body>
-       <h1>Odd</h1>
+      @include('elem.header')
+      
+      <h2>I am Odd! </h2>
+
+      @include('elem.footer')
     </body>
 </html>
