@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="{{mix('css/app.css')}}">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -13,11 +13,11 @@
     <body>
       @include('elem.header')
       
-      <ul>
+      <div class="container">
         @foreach ($oddNumbers as $num)
-          <li>{{$num}}</li>
+          <div>{{$num}}</div>
         @endforeach
-      </ul>
+      </div>
 
       @include('elem.footer')
     </body>
