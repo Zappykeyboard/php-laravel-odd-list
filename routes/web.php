@@ -16,6 +16,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/odd', function () {
-    return view('odd');
-});
+Route::get('/odd', 'oddController@showOddPage');

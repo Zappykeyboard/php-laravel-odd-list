@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class oddController extends Controller
 {
-    function ShowOddPage(){
+    function showOddPage(){
 
         return view('odd');
     }
