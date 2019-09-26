@@ -13,7 +13,11 @@
     <body>
       @include('elem.header')
       
-      <h2>I am Odd! </h2>
+      <ul>
+        @foreach ($oddNumbers as $num)
+          <li>{{$num}}</li>
+        @endforeach
+      </ul>
 
       @include('elem.footer')
     </body>
